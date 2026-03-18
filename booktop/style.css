@@ -1,0 +1,94 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background:#7c9dbd; "cor de fundo"
+    }
+    
+    header{
+    background:#28445a; cor da aba de cima
+    color:rgb(2, 1, 1);
+    padding:20px;
+    text-align:center;
+    }
+    
+    .logo{
+    color:#131f2b; cor da fonte
+    }
+    
+    .center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    }
+    
+    .login-box{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    width:300px;
+    text-align:center;
+    }
+    
+    input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+    }
+    
+    .btn{
+    background:#5a6897; cor do entrar
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    }
+
+    .container{
+    padding:30px;
+    }
+    
+    .livros{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    }
+    
+    .card{
+    background:white;
+    width:150px;
+    padding:10px;
+    border-radius:8px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    }
+    
+    .card img{
+    width:100%;
+    border-radius:5px;
+    }
+    
+    .livro-detalhe{
+    display:flex;
+    gap:30px;
+    padding:40px;
+    }
+    
+    .livro-detalhe img{
+    width:200px;
+    }
+    
+    @font-face{
+        font-family: Butterpop;
+        src: url("./Butterpop.ttf") format("truetype");
+        }
+        
+        .logo{
+        font-family: Butterpop, sans-serif;
+        font-size: 60px;
+        color: #0b0a0f;
+        }
