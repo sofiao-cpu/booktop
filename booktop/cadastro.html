@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro - BookTop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="center">
+
+<!-- Imagem do Snoopy -->
+<img src="https://upload.wikimedia.org/wikipedia/en/5/53/Snoopy_Peanuts.png" class="snoopy">
+
+<div class="login-box">
+
+<h1 class="logo">BookTop</h1>
+<p>Crie sua conta</p>
+
+<form id="cadastroForm">
+<input type="text" placeholder="Nome de usuário" required>
+<input type="email" placeholder="Email" required>
+<input type="password" placeholder="Senha" required>
+<button class="btn">Cadastrar</button>
+</form>
+
+<p>Já tem conta? <a href="index.html">Entrar</a></p>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const form = document.getElementById('cadastroForm');
+
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+
+const inputs = this.querySelectorAll('input');
+let valido = true;
+
+inputs.forEach(input => {
+if (!input.value.trim()) {
+valido = false;
+}
+});
+
+if (!valido) {
+alert('⚠️ Preencha todos os campos!');
+} else {
+alert('✅ Cadastro realizado com sucesso!');
+window.location.href = "home.html";
+}
+});
+});
+</script>
+
+</body>
+</html>

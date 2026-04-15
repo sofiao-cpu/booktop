@@ -1,18 +1,18 @@
 body{
     font-family: Arial;
     margin:0;
-    background:#7c9dbd; "cor de fundo"
+    background:#7c9dbd; /*cor de fundo*/
     }
     
     header{
-    background:#28445a; cor da aba de cima
+    background:#28445a; /*cor da aba de cima*/
     color:rgb(2, 1, 1);
     padding:20px;
     text-align:center;
     }
     
     .logo{
-    color:#131f2b; cor da fonte
+    color:#131f2b; /*cor da fonte*/
     }
     
     .center{
@@ -39,7 +39,7 @@ body{
     }
     
     .btn{
-    background:#5a6897; cor do entrar
+    background:#5a6897; /*cor do entrar*/
     color:white;
     border:none;
     padding:10px 20px;
@@ -92,3 +92,37 @@ body{
         font-size: 60px;
         color: #0b0a0f;
         }
+    /* ===== PÁGINA INICIAL (HERO) ===== */
+
+.hero {
+height: 100vh;
+background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center/cover;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+color: white;
+text-align: center;
+}
+
+.overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 80, 0.6);
+top: 0;
+left: 0;
+pointer-events: none; /* ISSO EVITA BUG */
+}
+
+.hero-content {
+position: relative;
+z-index: 1;
+}
+
+/* melhora o botão pra aparecer */
+.btn {
+display: inline-block;
+text-decoration: none;
+margin-top: 20px;
+}
